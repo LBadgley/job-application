@@ -1,18 +1,22 @@
-.hidden {
+/* .hidden {
      color: white;
-}
+} */
 
 body {
-    background: lavender;
-    background-image:
+    background: lavender; 
+    background-image: url("assets/softwaredevtutor.jpg");
+    background-size: 100%;
+
     font-family: 'Permanent Marker', cursive;
 }
+
 #apply-link {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
     font-family: 'Permanent Marker', cursive;
+    background-color: white;
 
 }
 header {

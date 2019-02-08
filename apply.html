@@ -14,8 +14,8 @@
     </header>
     <main>
         <form id="form-example">
-            <fieldset id="about-section">
-                <legend>Tell Us About Yourself...</legend>
+            <fieldset>
+                <legend id="about-section">Tell Us About Yourself...</legend>
                 <p>
                         <label for="name">Your name:</label>
                         <input
@@ -43,7 +43,7 @@
             </fieldset>
             <br />
             <fieldset>
-                <legend>A few more questions...</legend>
+                <legend id="more-questions">A few more questions...</legend>
                 <section>
                 <p>
                     <label for="coding-strength">How strong do you feel your coding skills are?</label>
@@ -60,8 +60,9 @@
                 </p>
             </section>
         </fieldset>
+        <br />
             <fieldset>
-                    <legend>What Days Are You Available?</legend>
+                    <legend id="days">What Days Are You Available?</legend>
                     <label for="days-available"></label>
                     <select id="days-available" name="days-available">
                        <option value = "" disable selected>Choose days:</option>
