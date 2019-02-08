@@ -5,11 +5,15 @@
 body {
     background: lavender; 
     background-image: url("assets/softwaredevtutor.jpg");
-    background-size: 100%;
+    background-size:    200%;
 
     font-family: 'Permanent Marker', cursive;
 }
-
+#welcome {
+    background-color:white;
+    border: 1px solid;
+    
+}
 #apply-link {
     display: flex;
     justify-content: center;

@@ -12,9 +12,19 @@ if(jsonObject) {
 }
 
 // taking the applicant array and getting out the most recent applicant
-const applicant = applicants[applicants.length - 1]; 
+// const applicant = applicants[applicants.length - 1]; 
+const searchParams = new URLSearchParams(window.location.search);
+const nameToFind = searchParams.get('name');
+let currentApplicant = {};
 
-name.textContent = applicant.name;
-location.textContent = applicant.location;
-codingStrength.textContent = applicant.strength;
-timeAvailability.textContent = applicant.timeAvailable;
+for(let i = 0; i < applicants.length; i++) {
+    currentApplicant = applicants[i];
+    if(nameToFind === currentApplicant.name) {
+        break;
+    }
+}
+
+name.textContent = currentApplicant.name;
+location.textContent = currentApplicant.location;
+codingStrength.textContent = currentApplicant.strength;
+timeAvailability.textContent = currentApplicant.timeAvailable;
