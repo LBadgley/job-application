@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="apply.css">
-
     <title>Web Developer Tutor Application</title>
 </head>
 <body>
@@ -17,16 +16,16 @@
             <fieldset>
                 <legend id="about-section">Tell Us About Yourself...</legend>
                 <p>
-                        <label for="name">Your name:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            autocomplete="off"
-                            minlength="0"
-                            required
-                            maxlength="30"
-                        >
+                    <label for="name">Your name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="off"
+                        minlength="0"
+                        required
+                        maxlength="30"
+                    >
                 </p>
                 <br />
                 <p>
@@ -39,14 +38,12 @@
                         autocomplete="on"
                     >
                 </p>
-                
             </fieldset>
             <br />
             <fieldset>
-                <legend id="more-questions">A few more questions...</legend>
-                <section>
+                <legend id="more-questions">Coding Experience</legend>
                 <p>
-                    <label for="coding-strength">How strong do you feel your coding skills are?</label>
+                    <label for="coding-strength">What level of development experience do you have?</label>
                     <input
                         type="range"
                         id="coding-strength"
@@ -58,19 +55,18 @@
                     <span id="strength-number">1</span>
                     <p>Beginner = 1 and Professional = 10</p>
                 </p>
-            </section>
         </fieldset>
         <br />
-            <fieldset>
-                    <legend id="days">What Days Are You Available?</legend>
-                    <label for="days-available"></label>
+        <fieldset>
+             <legend id="days">Availability?</legend>
+                 <label for="days-available"></label>
                     <select id="days-available" name="days-available">
                        <option value = "" disable selected>Choose days:</option>
                        <option value = "weekdays" >Weekdays</option>
                        <option value = "weekends">Weekends</option>
                        <option value = "both">Both</option>
                    </select>
-                   <section id="weekday-availability" hidden>
+                    <section id="weekday-availability" hidden>
                        <p>What weekdays are you available?</p>
                        <p>
                            <label for="monday">Monday</label>
@@ -108,11 +104,11 @@
                                 value="friday"
                                 name="weekday"
                            >
-                       </p>                                      
-                   </section>
-                </section>
-            <legend id="weekend-availability" hidden>
-                <h2>Weekends?</h2>
+                        </p>                                      
+                    </section>
+                    <!-- <br /> -->
+            <section id="weekend-availability" hidden>
+                <!-- <h2>Weekends?</h2>
                 <p>
                     <label for="yes-weekend">Yes:</label>
                     <input 
@@ -128,8 +124,8 @@
                         id="no-weekend"
                         name="weekend-availability"
                     >
-                </p>
-                <h2>what days?</h2>
+                </p> -->
+                <h2>--what weekend days?</h2>
             <label for="saturday">Saturday</label>
                 <input
                     type="checkbox"
@@ -144,18 +140,19 @@
                     id="sunday"
                     name="sunday"
                 > 
-            </legend>
-            <section id="time" hidden>
-                <h3>Okay sweet, what time are you available?</h3>
-                    <br/>
-                    <label for="how-long">When are you available?</label>
-                     <select id="how-long" required>
-                        <option value = "" disabled selected>Choose a time:</option>
-                        <option value = "morning">8:00AM to NOON</option>
-                        <option value = "afternoon">NOON to 4:00PM</option>
-                        <option value = "evening">4:00PM to 7:00PM</option>
-                     </select>  
             </section>
+        </fieldset>
+        <br />
+        <fieldset id="time" hidden>
+            <legend id="h3">What time are you available?</legend>
+                <br/>
+                 <label for="how-long">When are you available?</label>
+                 <select id="how-long" required>
+                     <option value = "" disabled selected>Choose a time:</option>
+                     <option value = "morning">8:00AM to NOON</option>
+                     <option value = "afternoon">NOON to 4:00PM</option>
+                     <option value = "evening">4:00PM to 7:00PM</option>
+                </select>  
             <section>
                 <button type="submit">
                     Submit Application Now!

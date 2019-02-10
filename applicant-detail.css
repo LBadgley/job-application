@@ -8,10 +8,17 @@ body {
 h1 {
     font-size: 40px;
 }
-p, dt {
+p {
+    font-weight:bold;
+}
+
+dt {
     font-weight: bold;
+    color: black;
+    
 }
 
 dl, dd {
     font-size: 20px;
+    color: #F6AE2D;
 }

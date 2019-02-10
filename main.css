@@ -3,29 +3,50 @@
 } */
 
 body {
-    background: lavender; 
-    background-image: url("assets/softwaredevtutor.jpg");
-    background-size:    200%;
+    /* background: lavender;  */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-image: url("nesa-by-makers-701360-unsplash.jpg");
+    background-size: 100%;
+}
 
+#box {
+    /* background: lavender;  */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-image: url("");
+    background-size: 100%;
     font-family: 'Permanent Marker', cursive;
+	max-width: 500px;
+	background: #FFF;
+	padding: 30px 30px 20px 30px;
+	box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+	-webkit-box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #666;
+	border-radius: 10px;
+	-webkit-border-radius: 20px;
 }
-#welcome {
-    background-color:white;
-    border: 1px solid;
 
-}
-#apply-link {
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-    padding: 10px;
-    font-family: 'Permanent Marker', cursive;
-    background-color: white;
-
-}
 header {
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
+.button {
+	font-size: 20px;
+	padding: .5rem 1.1rem .4rem;
+	border: 1px solid;
+	border-radius: 1rem;
+	background: white;
+	color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-decoration: none;
+}
+
 
